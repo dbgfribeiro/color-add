@@ -1,0 +1,332 @@
+nav a {
+  color: #666363;
+}
+
+/*----------------------INTRO------------------------*/
+#midia_header {
+  padding-bottom: 2%;
+}
+.midia-title {
+  padding: 8% 6% 0 6%;
+}
+.midia-title h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.midia-title h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
+.midia-title h3::after {
+  display: block;
+  content: '';
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+  width: 50%;
+}
+
+.header_img {
+  position: relative;
+  width: 100%;
+  padding: 4% 5% 0 5%;
+}
+.header_img img{
+  width: 100%;
+}
+
+.header_text {
+  position: absolute;
+  margin: 0 40% 0 2%;
+  bottom: 10%;
+  color: #fff;
+}
+.header_text h2{
+  font-size: 2em;
+}
+.header_text p{
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .midia_title {
+    padding-top: 80px;
+    padding-left: 40px;
+  }
+
+  .midia_title h1 {
+    font-size: 32px;
+    margin-top: -15px;
+  }
+
+  .midia_title h3 {
+    font-size: 20px;
+  }
+  .midia_title h3::after {
+    margin-top: -25px;
+  }
+  .header_text {
+    margin: 2% 30% 0 0;
+    color: #000;
+    position: relative;
+  }
+  .header_text h2{
+    font-size: 1.2em;
+  }
+  .header_text p{
+    margin-top: 2%;
+    font-size: 0.8em;
+  }
+
+}
+
+
+/*-----------------------NEWS------------------------*/
+
+.news-container{
+  display: flex;
+  justify-content: center;
+  margin: 4%;
+}
+.articles{
+  display: flex;
+  width: 50%;
+}
+.top .article{
+  width: 50%;
+  position: relative;
+}
+.bottom .article{
+  width: 50%;
+  position: relative;
+}
+.article{
+  background: #FFFFFF;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 16px;
+  padding: 1%;
+  margin: 1%;
+  min-height: 105%;
+}
+.article img{
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+}
+.article h3{
+  margin: 1.5% 0 0 1%;
+}
+.article p{
+  margin: 1.5% 0 0 1%;
+  color: #666363;
+  font-size: 14px;
+}
+.top .article a{
+  position: absolute;
+  bottom: 10px;
+  left: 0; 
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFCF26;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.bottom .article a{
+  position: absolute;
+  left: 0; 
+  right: 0;
+  bottom: 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFCF26;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.article a:hover{
+  opacity: 0.8;
+}
+@media screen and (max-width: 980px) {
+  .news-container{
+    display: block;
+  }
+  .articles{
+    display: flex;
+    width: 100%;
+  }
+}
+
+
+
+/*--------------RECORDS--------------*/
+.records-title {
+  padding: 8% 6% 0 6%;
+}
+.records-title  h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.records-title  h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
+.records-title  h3::after {
+  display: block;
+  content: '';
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+  width: 50%;
+}
+
+
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+  max-height: 600px;
+}
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+	/* Initially we don't want any height, and we want the contents to be hidden */
+	max-height: 0;
+	overflow: hidden;
+
+	/* Set our transitions up. */
+	-webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+}
+
+.accordion {
+  padding: 4% 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-title {
+  display: flex;
+  position: relative;
+}
+
+
+.accordion-title #open{
+  text-decoration: none;
+  color: #666363;
+  padding: 0 10px;
+  border-radius: 100px;
+  background: #FFCF26;
+  font-size: 2em;
+  font-weight: 600;
+  position: absolute;
+  font-size: 1.5em;
+  right: 2%;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  visibility: visible;
+}
+.accordion-title #open:after{
+  color: #666363;
+  padding: 0 10px;
+  border-radius: 100px;
+  background: #FFCF26;
+  position: absolute;
+  right: 2%;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  visibility: hidden;
+  content: "-";
+}
+.accordion-item:hover > .accordion-title #open{
+  visibility: hidden;
+}
+.accordion-item:hover > .accordion-title #open:after{
+  visibility: visible;
+}
+
+
+.accordion .accordion-item {
+  padding: 1.5em;
+  margin: 4% 0;
+  background-color: #ffffff;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+
+.accordion h1 {
+  color: #000000;
+  margin: 0;
+  font-size: 18px;
+}
+
+.accordion p {
+  padding-top: 20px;
+  color: #666363;
+  width: 90%;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 980px) {
+  .accordion h1 {
+    font-size: 14px;
+  }
+
+  .accordion p {
+    font-size: 13px;
+  }
+
+  .accordion-title a {
+    margin-left: 70%;
+  }
+
+  .accordion {
+    width: 80%;
+  }
+  .accordion .accordion-item {
+    padding: 15px;
+    width: 95%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .accordion {
+    width: 85%;
+    padding-top: 420px;
+  }
+
+  .accordion .accordion-item {
+    padding: 15px;
+
+  }
+
+  .accordion h1 {
+    font-size: 10px;
+  }
+
+  .accordion p {
+    font-size: 12px;
+  }
+
+  .accordion-title a {
+    font-size: 10px;
+    padding: 1px 5.5px 1px 5.5px;
+    margin-left: 66%;
+  }
+}

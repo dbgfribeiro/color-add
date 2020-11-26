@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/hamburguer.css">
+  <link rel="stylesheet" href="css/flickity.css">
+  <link rel="stylesheet" href="css/code.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="js/scroll.js"></script>
+  <title>Código</title>
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <a href="index.html"><img src="img/logosocial.png" alt="logo_colorAdd"></a>
+      <div class="nav-links">
+        <ul class="options">
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="colorblindness.html">Daltonismo</a></li>
+          <li><a href="code.html">Código</a></li>
+          <li class="dropdown"><a href="schools.html">Escolas</a>
+            <div class="dropdown-content">
+              <a href="schools.html#schools">Programa nas escolas</a>
+              <a href="schools.html#whatwedone">O que fizemos</a>
+            </div>
+          </li>
+          <li><a href="midia.html">Notícias</a></li>
+        </ul>
+        <button id="myBtn" onclick="revealForm()">Contact Us</button>
+      </div>
+    </nav>
+
+    <section id="hamburguer">
+      <input id="menu-hamburguer" type="checkbox" class="check">
+      <label for="menu-hamburguer">
+        <div class="menu-select">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+      <div class="menu" id="hiddenMenu" style="display:none">
+        <ul>
+          <a href="about.html"><li>Sobre</li></a>
+          <a href="colorblindness.html"><li>Daltonismo</li></a>
+          <a href="code.html"><li>Código</li></a>
+          <a href="schools.html"><li>Escolas</li></a>
+          <a href="midia.html"><li>Notícias</li></a>
+          <a onclick="revealForm()"><li>Contact</li></a>
+        </ul>
+      </div>
+      <script src="js/hamburguer.js"></script>
+    </section>
+
+  </header>
+
+
+  <main>
+
+    <section id="intro">
+      <div class="code-title">
+        <h1>HOW IT WORKS</h1>
+        <h3>CODE</h3>
+      </div>
+
+      <div class="code-info">
+        <img src="img/code_logo.png" alt="code-logo">
+        <p>O ColorADD é uma linguagem universal, transversal e inclusiva, desenvolvida com base nas três cores primárias mais o branco e o preto, representadas através de símbolos gráficos que, conjugados, segundo o conceito de adição de cores permite ao daltónico identificar toda a paleta de cores sempre que a cor é um fator de identificação, orientação ou escolha.</p>
+      </div>
+
+      <div class="more-code">
+        <p>Esta linguagem torna-se num “jogo mental” simples, fácil de memorizar e aplicar em
+          situações do dia-a-dia, permitindo a correta identificação das cores.</p>
+          <div class="code-exp">
+            <img id="first" src="img/code/primarias.jpg" alt="code-simple">
+            <img src="img/code/codeplus.png" alt="code-more">
+          </div>
+      </div>
+
+      <div class="full-code">
+        <img src="img/code/codigo.png" alt="full-code">
+        <p>O código ColorADD encontra-se já implementado em vários produtos de diversos
+          setores tais como: material didático, jogos, redes de transportes, meio ambiente e espaços
+          públicos, hospitais, têxtil e vestuário, comunicação digital, entre outros.
+          São mais de 300 parcerias e diversas implementações testadas e validadas, através de modelos
+          de cocriação, reforçando o valor intersetorial e a utilidade desta ferramenta na criação de
+          acessibilidades iguais para Todos.
+          <br><br>
+          O ColorADD garantiu reconhecimento mundial da comunidade científica, académica,
+          corporativa e institucional. Eleita pela revista brasileira Galileu como “uma das 40 ideias que
+          vão mudar o mundo” ou como uma das melhores iniciativas mundiais de acessibilidades pelo
+          Zero Project, projeto promovido pelas Nações Unidas e reconhecido pela ASHOKA, organização
+          mundial de empreendedores sociais.</p>
+      </div>
+  
+  
+    </section>
+  
+    <section id="code-video">
+      <div class="container-video">
+        <video width="50%" autoplay controls muted>
+          <source src="img/code_video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+
+
+    <section id="examples">
+
+      <div class="ex-title">
+        <h1>IMPLEMENTAÇÃO</h1>
+        <h3>EXEMPLOS</h3>
+      </div>
+
+      <div class="ex-slider">
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+          <img class="gallery-cell" src="img/implementacao/imp1.jpg" alt="example-img">
+          <img class="gallery-cell" src="img/implementacao/imp2.jpg" alt="example-img">
+          <img class="gallery-cell" src="img/implementacao/imp3.jpg" alt="example-img">
+          <img class="gallery-cell" src="img/implementacao/imp4.jpg" alt="example-img">
+          <img class="gallery-cell" src="img/implementacao/imp5.jpg" alt="example-img">
+          <img class="gallery-cell" src="img/implementacao/imp6.jpg" alt="example-img">
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <footer>
+    <div class="footer_sponsors">
+      <img src="img/logosrodape.png" alt="sponsors">
+    </div>
+
+    <div class="footer_info">
+
+      <div class="footer_about">
+        <h1>Sobre</h1>
+        <p>Código</p>
+        <p>Projetos</p>
+        <p>ColorADD</p>
+      </div>
+      <div class="footer_office">
+        <h1>Encontra-nos</h1>
+        <p>Rua de Miguel Bombarda,</p>
+        <p>nº124 Sala 2A</p>
+        <p>4050-377 Porto, Portugal</p>
+      </div>
+      <div class="footer_contact">
+        <h1>Contacto</h1>
+        <p>+351 917 526 446</p>
+        <p>+351 229 372 053</p>
+        <p>coloradd.social@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer_sep"> </div>
+  
+    <div class="footer_social">
+      <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
+      <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
+      <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
+      <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+    </div>
+  
+  </footer>
+  
+  <script src="js/flickity.pkgd.js"></script>
+</body>
+
+</html>

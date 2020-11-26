@@ -1,0 +1,157 @@
+nav a {
+  color:#666363;
+}
+
+/*----------------------INTRO------------------------*/
+#intro {
+  padding-bottom: 8%;
+}
+.code-title{
+  padding: 8% 0 0 8%;
+}
+.code-title h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.code-title h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
+.code-title h3::after {
+  display: block;
+  content: '';
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+  width: 50%;
+}
+.code-info{
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.code-info img{
+  width: 40%;
+  height: 40%;
+}
+.code-info p{
+  color: #666363;
+  width: 32%;
+  margin-left: 2%;
+}
+
+.more-code{
+  padding: 4% 8% 6% 8%;
+  display: flex;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: fit-content;
+}
+.more-code p{
+  color: #666363;
+  padding-right: 4%;
+}
+.code-exp{
+  display: block;
+}
+.code-exp img{
+  width: 650px;
+}
+
+.full-code{
+  display: flex;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: fit-content;
+  padding: 4% 8%;
+}
+.full-code p{
+  color: #666363;
+}
+.full-code img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*----------------------VIDEO------------------------*/
+#code-video {
+  height: 600px;
+}
+
+.container-video {
+  padding: 4% 0;
+  background-color: #EBEBEB;
+  text-align: center;
+}
+
+.container-video video {
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/*----------------------EXAMPLES------------------------*/
+#examples {
+}
+.ex-title{
+  padding: 4% 0 0 8%;
+}
+.ex-title h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.ex-title h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
+.ex-title h3::after {
+  display: block;
+  content: '';
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+  width: 50%;
+}
+.flickity-button {
+  background-color: #FFCF26;
+}
+.flickity-button-icon {
+  color: #fff;
+}
+.gallery {
+  margin: 6% 0 10% 0; 
+}
+.gallery-cell {
+  width: 40%;
+  height: 45vh;
+  margin-right: 1%;
+  border-radius: 25px;
+  counter-increment: gallery-cell;
+  object-fit: cover;
+}
+

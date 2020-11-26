@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/labs.css">
+  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/hamburguer.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/slider.js"></script>
+  <title>Sobre</title>
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <a href="index.html"><img src="img/logosocial.png" alt="logo_colorAdd"></a>
+      <div class="nav-links">
+        <ul class="options">
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="colorblindness.html">Daltonismo</a></li>
+          <li><a href="code.html">Código</a></li>
+          <li class="dropdown"><a href="schools.html">Escolas</a>
+            <div class="dropdown-content">
+              <a href="schools.html#schools">Programa nas escolas</a>
+              <a href="schools.html#whatwedone">O que fizemos</a>
+            </div>
+          </li>
+          <li><a href="midia.html">Notícias</a></li>
+        </ul>
+        <button id="myBtn" onclick="revealForm()">Contact Us</button>
+      </div>
+    </nav>
+
+    <section id="hamburguer">
+      <input id="menu-hamburguer" type="checkbox" class="check">
+      <label for="menu-hamburguer">
+        <div class="menu-select">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+      <div class="menu" id="hiddenMenu" style="display:none">
+        <ul>
+          <a href="about.html"><li>Sobre</li></a>
+          <a href="colorblindness.html"><li>Daltonismo</li></a>
+          <a href="code.html"><li>Código</li></a>
+          <a href="schools.html"><li>Escolas</li></a>
+          <a href="midia.html"><li>Notícias</li></a>
+          <a onclick="revealForm()"><li>Contact</li></a>
+        </ul>
+      </div>
+      <script src="js/hamburguer.js"></script>
+    </section>
+
+  </header>
+
+  <main>
+
+    <section id="intro">
+      <div class="intro_container">
+  
+        <div class="intro_vid">
+          <video width="545" height="315" autoplay muted>
+            <source src="img/intro.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="intro_text">
+          <h1>QUEM SOMOS?</h1>
+          <h3>ColorADD Social</h3>
+          <p><b>“A Cor deve ser para Todos!!!”</b>
+            <br>
+            Pela disseminação do código ColorADD,
+            pretendemos chegar a 7 biliões de pessoas, garantindo a plena integração de 350 milhões de daltónicos numa sociedade global onde 90% da comunicação é feita através da cor...
+            <br>
+            <b>INCLUIR SEM DISCRIMINAR!!!</p></b>
+        </div>
+  
+      </div>
+    </section>
+
+    <section id="about">
+
+      <div class="accordion">
+        <div class="about-title">
+          <h1>O QUE FAZEMOS?</h1>
+          <h3>MISSÃO</h3>
+        </div>
+
+
+    
+        <section class="accordion-item" id="item">
+          <div class="accordion-title">
+            <h1>Uma associação sem fins lucrativos...<a id='open' href='#'>+</a></h1>
+          </div>
+          <div class="accordion-item-content">
+            <p>A ColorADD.Social é uma associação sem fins lucrativos, que se dedica a promover a integração social de pessoas com dificuldade na identificação de cores, em particular as portadoras de daltonismo, mediante a adoção do código ColorADD.</p>
+          </div>
+        </section>
+
+        <section class="accordion-item">
+          <div class="accordion-title">
+            <h1>Fundada a 2014...<a id='open' href='#'>+</a></h1>
+          </div>
+          <div class="accordion-item-content">
+            <p>Fundada em 2014, a ColorADD.Social tem por missão alertar a comunidade em geral para a causa do daltonismo, com particular enfoque na comunidade escolar, formando, apoiando e acompanhando técnica e socialmente projetos educacionais e de inclusão. Desta forma contribui para uma escola inclusiva, promovendo a deteção precoce do daltonismo na infância e assegurando às crianças com dificuldades de identificação das cores. É em contexto escolar que se intensifica a relação com o meio e com o grupo de pares, surgindo também os primeiros constrangimentos e os primeiros sinais de rejeição e exclusão social: bullying, baixa autoestima, dificuldades de aprendizagem, insucesso escolar, etc. Assim, a nossa ação é especialmente direcionada para a comunidade escolar, contribuindo para uma escola inclusiva e assegurando às crianças daltónicas a acessibilidade à cor nas bibliotecas e salas de aula. Temos como objetivo contribuir para uma sociedade inclusiva e não discriminatória, em que todas as crianças tenham as mesmas oportunidades de aprendizagem e saibam identificar e conviver com a diferença.</p>
+          </div>
+        </section>
+
+        <section class="accordion-item">
+          <div class="accordion-title">
+            <h1>No ensino....<a id='open' href='#'>+</a></h1>
+          </div>
+          <div class="accordion-item-content">
+            <p>Sabemos que os primeiros anos de vida são essenciais para a formação da personalidade do futuro adulto e é em contexto escolar que se intensifica a relação com o meio envolvente e com o grupo de pares. Assim, consideramos essencial intervir precocemente junto daqueles que um dia serão o nosso futuro, levando esta ferramenta às escolas para que, de uma forma lúdica e divertida, as crianças se possam familiarizar com uma nova linguagem que os ajudará, mais tarde, a decidir, com independência, sempre que a cor for um fator de decisão. Nesse sentido, a ColorADD.Social tem vindo, em parceria com diversos stakeholders, a sensibilizar toda a comunidade – com particular enfoque na comunidade escolar – para o daltonismo e todos os constrangimentos associados a esta limitação não visível</p>
+          </div>
+        </section>
+      </div>
+      
+      <script>
+      $('.accordion-item').mouseover(function() {
+        $('.arrow').addClass( "up" );
+      });
+      
+      $('.accordion-item').mouseout(function() {
+        $('.arrow').removeClass( "up" );
+      });
+        
+      </script>
+
+    </section>
+
+
+
+    <section id="team">
+      <div class="team-title">
+        <h1>QUEM SOMOS?</h1>
+        <h3>EQUIPA</h3>
+      </div>
+
+      <div class="team-info">
+        <p>A ColorADD.Social é composta por uma equipa de pessoas dedicadas e comprometidas com a esta causa, com formações e backgrounds distintos, mas que se interligam e complementam, abrangendo diferentes áreas das ciências sociais e humanas.</p>
+        <img src="img/team.png " alt="team-picture">
+        <p>Esta equipa é responsável pela realização do “Programa ColorADD nas Escolas”,
+          estando envolvida em todas as fases do processo, promovendo e organizando todas as ações.
+          Para além dos elementos a tempo inteiro, contamos ainda com uma rede de voluntários que
+          connosco têm vindo a replicar este Programa em diversas geografias.</p>
+      </div>
+
+      
+    </section>
+
+
+
+    <section id="partners">
+
+      <div class="partners-title">
+        <h1>O NOSSO APOIO</h1>
+        <h3>PARCEIROS</h3>
+      </div>
+
+
+      <div class="all-partners">
+        <div class="partners-container">
+          <div class="partner">
+            <img src="img/partners/partner-01.png" alt="partner-icon">
+            <div class="partner-content">
+              <h3>Comunidades Intermunicipais</h3>
+              <div class="partner-desc">
+                <p>Fazem o planeamento da oferta educativa de nível supramunicipal. Por via das comunidades intermunicipais é possível apresentar o nosso Programa a todos os municípios que as constituem. Os próprios municípios podem pedir apoio às Comunidades Intermunicipais para a implementação de determinados projetos.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="partner">
+            <img src="img/partners/partner-02.png" alt="partner-icon">
+            <div class="partner-content">
+              <h3>Câmaras Municipais</h3>
+              <div class="partner-desc">
+                <p>São as entidades que tutelam o 1.o CEB. Fazem a ponte com as escolas de modo a agilizar a implementação do “Programa ColorADD nas Escolas”.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="partner">
+            <img src="img/partners/partner-03.png" alt="partner-icon">
+            <div class="partner-content">
+              <h3>Escolas<br>(públicas e privadas)</h3>
+              <div class="partner-desc">
+                <p>São as entidades que reúnem os destinatários finais do “Programa ColorADD nas Escolas”: alunos, professores e restante comunidade educativa. É no espaço escola que se desenvolve o “Programa ColorADD nas Escolas”.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="partner">
+            <img src="img/partners/partner-04.png" alt="partner-icon">
+            <div class="partner-content">
+              <h3>Óticas e Grupos Óticos</h3>
+              <div class="partner-desc">
+                <p>Realizam os rastreios do daltonismo (uma das ações que fazem parte do “Programa ColorADD nas Escolas”). Fazem-no de acordo com a sua política de responsabilidade social, a título gracioso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+          <div class="partners-container">
+  
+          <div class="partner">
+            <img src="img/partners/partner-05.png" alt="partner-icon">
+            <div class="partner-content">
+              <h3>Fundações</h3>
+              <div class="partner-desc">
+                <p>Apoiam financeiramente a ColorADD.Social, tanto a nível individual, como em parceria com o Estado português no caso de candidaturas a fundos comunitários (Fundação EDP, Fundação Calouste Gulbenkian, Fundação Montepio, Fundação Eugénio de Almeida).</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="partner">
+            <img src="img/partners/partner-06.png" alt="partner-icon">
+            <div class="partner-content">
+              <h3>Associações</h3>
+              <div class="partner-desc">
+                <p>Como é o caso da Associação Portuguesa dos Licenciados em Optometria (APLO), cujos associados se disponibilizam para a realização dos rastreios do daltonismo, e também a Associação de Solidariedade Social dos Professores (ASSP) se voluntariou para dinamização de algumas das ações do “Programa ColorADD nas Escolas”.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="partner">
+            <img src="img/partners/partner-07.png" alt="partner-icon">
+            <div class="partner-content">
+              <h3>Cooperativas</h3>
+              <div class="partner-desc">
+                <p>A Cooperativa Elétrica do Vale d’Este (CEVE), localizada no concelho de V. N. de Famalicão proporcionou, em diversas ocasiões, a entrega de material escolar aos alunos das escolas que se encontram na sua área geográfica de ação.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="partner">
+            <img src="img/partners/partner-08.png" alt="partner-icon">
+            <div class="partner-content">
+              <h3>CRTIC</h3>
+              <div class="partner-desc">
+                <p>Centro de Recursos TIC para a Educação Especial</p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
+
+      <div class="slider-logos">
+        
+      </div>
+
+    </section>
+
+
+    <section id="awards">
+      <div class="awards-title">
+        <h1>O NOSSO RECONHECIMENTO</h1>
+        <h3>PRÉMIOS</h3>
+      </div>
+
+
+      <div class="awards-container">
+        <div class="award">
+          <h2>PRÉMIO BPI CAPACITAR 2015</h2>
+          <p>Prémio atribuído pelo BPI, que nos permitiu chegar a mais de 18.300 alunos beneficiários
+            diretos deste programa, que se realizou um pouco por todo o território nacional.</p>
+          <div class="awards-links">
+            <a href="https://www.facebook.com/bpisolidariedade/videos/972866429467461" target="_blank">Link 1</a>
+            <a href="https://www.facebook.com/bpisolidariedade/photos/a.916858245068280/916859038401534" target="_blank">Link 2</a>
+          </div>
+        </div>
+  
+        <div class="award">
+          <h2>PRÉMIO CAIXA SOCIAL 2020</h2>
+          <p>Prémio atribuído pela CGD, vem permitir que o Programa da ColorADD.Social se expanda
+            agora à Região Autónoma dos Açores, permitindo realizar o nosso Programa nas Escolas do
+            concelho da Ribeira Grande, São Miguel.</p>
+          <div class="awards-links">
+            <a href="https://www.cgd.pt/Sustentabilidade/Responsabilidade-Social/Pages/Premios-2Edicao.aspx" target="_blank">Link 1</a>
+            <a href="https://www.facebook.com/ColorADD.Social/posts/730129777393038" target="_blank">Link 2</a>
+            <a href="https://www.cm-ribeiragrande.pt/projeto-coloradd-nas-escolas-da-ribeira-grande-ganha-premio-caixa-social-2020">Link 3</a>
+          </div>
+        </div>
+  
+      </div>
+
+    </section>
+
+  
+  </main>
+
+
+  <footer>
+    <div class="footer_sponsors">
+      <img src="img/logosrodape.png" alt="sponsors">
+    </div>
+
+    <div class="footer_info">
+
+      <div class="footer_about">
+        <h1>Sobre</h1>
+        <p>Código</p>
+        <p>Projetos</p>
+        <p>ColorADD</p>
+      </div>
+      <div class="footer_office">
+        <h1>Encontra-nos</h1>
+        <p>Rua de Miguel Bombarda,</p>
+        <p>nº124 Sala 2A</p>
+        <p>4050-377 Porto, Portugal</p>
+      </div>
+      <div class="footer_contact">
+        <h1>Contacto</h1>
+        <p>+351 917 526 446</p>
+        <p>+351 229 372 053</p>
+        <p>coloradd.social@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer_sep"> </div>
+  
+    <div class="footer_social">
+      <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
+      <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
+      <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
+      <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+    </div>
+  
+  </footer>
+
+  </body>
+
+</html>

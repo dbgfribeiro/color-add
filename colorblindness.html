@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/colorblindness.css">
+  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/hamburguer.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="js/plugins/debug.addIndicators.min.js"></script>
+  <title>Sobre o daltonismo</title>
+</head>
+
+<body>
+
+  <header>
+
+    <nav>
+      <a href="index.html"><img src="img/logosocial.png" alt="logo_colorAdd"></a>
+      <div class="nav-links">
+        <ul class="options">
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="colorblindness.html">Daltonismo</a></li>
+          <li><a href="code.html">Código</a></li>
+          <li class="dropdown"><a href="schools.html">Escolas</a>
+            <div class="dropdown-content">
+              <a href="schools.html#schools">Programa nas escolas</a>
+              <a href="schools.html#whatwedone">O que fizemos</a>
+            </div>
+          </li>
+          <li><a href="midia.html">Notícias</a></li>
+        </ul>
+        <button id="myBtn" onclick="revealForm()">Contact Us</button>
+      </div>
+    </nav>
+
+    <section id="hamburguer">
+      <input id="menu-hamburguer" type="checkbox" class="check">
+      <label for="menu-hamburguer">
+        <div class="menu-select">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+      <div class="menu" id="hiddenMenu" style="display:none">
+        <ul>
+          <a href="about.html"><li>Sobre</li></a>
+          <a href="colorblindness.html"><li>Daltonismo</li></a>
+          <a href="code.html"><li>Código</li></a>
+          <a href="schools.html"><li>Escolas</li></a>
+          <a href="midia.html"><li>Notícias</li></a>
+          <a onclick="revealForm()"><li>Contact</li></a>
+        </ul>
+      </div>
+      <script src="js/hamburguer.js"></script>
+    </section>
+
+  </header>
+
+
+  <main>
+
+    <section id="cb-intro">
+      <div class="cb-title">
+        <h1>O QUE É?</h1>
+        <h3>DALTONISMO</h3>
+      </div>
+      <div class="cb-intro-info">
+        <p>O daltonismo, também conhecido como cegueira das cores, é uma limitação
+          caracterizada pela incapacidade de distinguir todas ou algumas cores. Maioritariamente de
+          transmissão hereditária, afeta cerca de <b>350 milhões de pessoas em todo o mundo</b> – 8% a 12%
+          nos homens e 0,5% a 2% nas mulheres - originando grandes constrangimentos ao nível da
+          integração social e profissional.</p>
+        <img src="img/cubo.png" alt="cubo">
+      </div>
+
+
+      <div class="cb-numbers">
+        <div class="cb-number">
+          <h2>90,2%</h2>
+          <p>Pede ajuda na compra de vestuário.</p>
+        </div>
+        <div class="cb-number">
+          <h2>73,2%</h2>
+          <p>Já sentiu embaraço na escolha da cor.</p>
+        </div>
+        <div class="cb-number">
+          <h2>17%</h2>
+          <p>Foi diagnosticado depois dos 20 anos de idade.</p>
+        </div>
+        <div class="cb-number">
+          <h2>41,5%</h2>
+          <p>Sente dificuldade de integração social.</p>
+        </div>
+      </div>
+
+      <div class="more-info">
+        <p>O daltonismo ocorre com maior incidência no sexo masculino pois está
+          geneticamente ligado ao cromossoma X. Para uma mulher ser daltónica é necessário ter os
+          dois genes recessivos nos cromossomas X, o que explica a menor incidência desta limitação no
+          sexo feminino.</p>
+          <p>Esta limitação deve o seu nome ao químico John Dalton (1776-1844), ele próprio
+            daltónico, que foi o primeiro a estudar esta anomalia. Não existe cura para o daltonismo. O
+            diagnóstico precoce pode permitir a aplicação de métodos educacionais específicos para
+            proporcionar à criança uma melhor adaptação à capacidade diminuída de reconhecimento das
+            cores.</p>
+      </div>
+
+
+    </section>
+
+    <section id="cb-types">
+      <div class="types-title">
+        <h1>COMO VEMOS?</h1>
+        <h3>VISÕES DALTÓNICAS</h3>
+      </div>
+
+      <div class="cb-types-info">
+        <p>Existem diferentes tipos de daltonismo (dependendo da
+          incidência nos cones azul, verde ou vermelho):</p>
+      </div>
+
+      <div class="cb-types-container"> 
+
+        <div class="cb-type">
+          <h3>Protanopia</h3>
+          <div class="cb-type-info">
+            <img src="img/cubos/03_2A.png" alt="cubo">
+            <p>É a deficiência total nos cones vermelhos</p>
+          </div>
+        </div>
+        <div class="cb-type">
+          <h3>Deuteranopia</h3>
+          <div class="cb-type-info">
+            <img src="img/cubos/03_2B.png" alt="cubo">
+            <p>É a deficiência total nos cones verdes</p>
+          </div>
+        </div>
+        <div class="cb-type">
+          <h3>Tritanopia</h3>
+          <div class="cb-type-info">
+            <img src="img/cubos/03_2C.png" alt="cubo">
+            <p>É a deficiência total nos cones azuis</p>
+          </div>
+        </div>
+        <div class="cb-type">
+          <h3>Acromatopsia</h3>
+          <div class="cb-type-info">
+            <img src="img/cubos/03_2D.png" alt="cubo">
+            <p>Incapacidade de distinguir todas as cores</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  
+  <footer>
+    <div class="footer_sponsors">
+      <img src="img/logosrodape.png" alt="sponsors">
+    </div>
+
+    <div class="footer_info">
+
+      <div class="footer_about">
+        <h1>Sobre</h1>
+        <p>Código</p>
+        <p>Projetos</p>
+        <p>ColorADD</p>
+      </div>
+      <div class="footer_office">
+        <h1>Encontra-nos</h1>
+        <p>Rua de Miguel Bombarda,</p>
+        <p>nº124 Sala 2A</p>
+        <p>4050-377 Porto, Portugal</p>
+      </div>
+      <div class="footer_contact">
+        <h1>Contacto</h1>
+        <p>+351 917 526 446</p>
+        <p>+351 229 372 053</p>
+        <p>coloradd.social@gmail.com</p>
+      </div>
+    </div>
+    <div class="footer_sep"> </div>
+  
+    <div class="footer_social">
+      <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
+      <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
+      <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
+      <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+    </div>
+  
+  </footer>
+
+</body>
+
+</html>

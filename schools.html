@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/schools.css">
+  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/hamburguer.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="js/scroll.js"></script>
+  <title>Programa nas Escolas</title>
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <a href="index.html"><img src="img/logosocial.png" alt="logo_colorAdd"></a>
+      <div class="nav-links">
+        <ul class="options">
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="colorblindness.html">Daltonismo</a></li>
+          <li><a href="code.html">Código</a></li>
+          <li class="dropdown"><a href="schools.html">Escolas</a>
+            <div class="dropdown-content">
+              <a href="schools.html#schools">Programa nas escolas</a>
+              <a href="schools.html#whatwedone">O que fizemos</a>
+            </div>
+          </li>
+          <li><a href="midia.html">Notícias</a></li>
+        </ul>
+        <button id="myBtn" onclick="revealForm()">Contact Us</button>
+      </div>
+    </nav>
+
+    <section id="hamburguer">
+      <input id="menu-hamburguer" type="checkbox" class="check">
+      <label for="menu-hamburguer">
+        <div class="menu-select">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+      <div class="menu" id="hiddenMenu" style="display:none">
+        <ul>
+          <a href="about.html"><li>Sobre</li></a>
+          <a href="colorblindness.html"><li>Daltonismo</li></a>
+          <a href="code.html"><li>Código</li></a>
+          <a href="schools.html"><li>Escolas</li></a>
+          <a href="midia.html"><li>Notícias</li></a>
+          <a onclick="revealForm()"><li>Contact</li></a>
+        </ul>
+      </div>
+      <script src="js/hamburguer.js"></script>
+    </section>
+
+  </header>
+
+
+      <main>
+
+        <section id="schools">
+
+          <div class="schools-title">
+            <h1>COLORADD NO ENSINO</h1>
+            <h3>PROGRAMA NAS ESCOLAS</h3>
+          </div>
+
+          <div class="schools-desc">
+            <p>Desenvolvemos um programa composto por um conjunto de ações, que realizamos
+              nas escolas do 1.o Ciclo de Ensino Básico (CEB) aos alunos e a toda a comunidade educativa
+              para que possam entender esta limitação e os seus constrangimentos no dia-a-dia, enquanto
+              aprendem uma ferramenta que permite ao daltónico ultrapassar essas dificuldades.
+              Este programa é direcionado preferencialmente ao 3.o ano de escolaridade. Sendo um
+              programa de continuidade, replicado anualmente, conseguimos abranger todas as crianças
+              deste ciclo de ensino.</p>
+          </div>
+          
+
+            <div class="c-my-flooper js-flooper2">
+
+              <div class="c-my-flooper__el js-flooper-item">
+                <div class="school-project">
+                  <img src="img/schools/social.jpg" alt="schoolProject">
+                  <h2>Medição do Impacto Social</h2>
+                  <p>Estudo com vista a aferir o impacto do “Programa ColorADD nas Escolas” e, a longo prazo, na
+                    diminuição do insucesso e abandono escolar precoce, do número de crianças com dificuldades
+                    de aprendizagem, com dificuldades de relacionamento interpessoal e ainda na diminuição de
+                    casos de bullying.</p>
+                </div>
+              </div>
+
+              <div class="c-my-flooper__el js-flooper-item">
+                <div class="school-project">
+                  <img src="img/schools/versentir.jpg" alt="schoolProject">
+                  <h2>“Ver e Sentir as Cores”</h2>
+                  <p>Possibilitar aos alunos experienciar a visão daltónica, entender as suas limitações e
+                    constrangimentos. Desta forma, através de uma dinâmica interativa e lúdica, permite-se uma
+                    maior identificação das crianças com esta limitação, sensibilizando os alunos para a questão da
+                    diferença e da necessidade de se saber relacionar com ela.</p>
+                </div>
+              </div>
+
+              <div class="c-my-flooper__el js-flooper-item">
+              <div class="school-project">
+                <img src="img/schools/rastreio.jpg" alt="schoolProject">
+                <h2>Rastreio precoce do daltonismo</h2>
+                <p>Promover a realização do rastreio precoce do daltonismo e da acuidade visual aos alunos do
+                  1.o CEB, por forma a identificar possíveis casos de daltonismo. Deste modo, poderá ser feito
+                  um acompanhamento que previna o insucesso e abandono escolar, baixa autoestima e
+                  autoconfiança, situações de bullying, etc.</p>
+              </div>
+              </div>
+
+              <div class="c-my-flooper__el js-flooper-item">
+                <div class="school-project">
+                  <img src="img/schools/inclusivas.jpg" alt="schoolProject">
+                  <h2>Escolas Inclusivas | ColorADD</h2>
+                  <p>Tornar o espaço-escola inclusivo para todos.
+                    Pretende-se adaptar todos os equipamentos escolares que referenciem ou informem através
+                    da cor com o código.</p>
+                </div>
+              </div>
+
+              <div class="c-my-flooper__el js-flooper-item">
+                <div class="school-project">
+                  <img src="img/schools/bibliotecas.jpg" alt="schoolProject">
+                  <h2>Bibliotecas Escolares | ColorADD</h2>
+                  <p>Tornar a biblioteca escolar mais inclusiva e acessível para todos.
+                    Pretende-se referenciar e catalogar todos os livros existentes nas bibliotecas escolares
+                    seguindo as recomendações da CDU – Classificação Decimal Universal (UNESCO), um sistema
+                    que sugere fazer corresponder uma cor a cada uma das diferentes classes temáticas.</p>
+                </div>
+              </div>
+
+              <div class="c-my-flooper__el js-flooper-item">
+                <div class="school-project">
+                  <img src="img/schools/social.jpg" alt="schoolProject">
+                  <h2>Medição do Impacto Social</h2>
+                  <p>Estudo com vista a aferir o impacto do “Programa ColorADD nas Escolas” e, a longo prazo, na
+                    diminuição do insucesso e abandono escolar precoce, do número de crianças com dificuldades
+                    de aprendizagem, com dificuldades de relacionamento interpessoal e ainda na diminuição de
+                    casos de bullying.</p>
+                </div>
+  
+              </div>
+
+              <div class="c-my-flooper__el js-flooper-item">
+                <div class="school-project">
+                  <img src="img/schools/social.jpg" alt="schoolProject">
+                  <h2>Medição do Impacto Social</h2>
+                  <p>Estudo com vista a aferir o impacto do “Programa ColorADD nas Escolas” e, a longo prazo, na
+                    diminuição do insucesso e abandono escolar precoce, do número de crianças com dificuldades
+                    de aprendizagem, com dificuldades de relacionamento interpessoal e ainda na diminuição de
+                    casos de bullying.</p>
+                </div>
+              </div>
+
+              <div class="c-my-flooper__el js-flooper-item">
+                <div class="school-project">
+                  <img src="img/schools/kits.jpg" alt="schoolProject">
+                  <h2>Entrega de KITS ColorADD</h2>
+                  <p> Distribuição de material escolar com o código ColorADD aos alunos que realizem o “Programa
+                    ColorADD nas Escolas” para que todos (daltónicos e não daltónicos) possam ter acesso a
+                    ferramentas que lhes permitam consolidar a aprendizagem do código..</p>
+                </div>  
+              </div>
+
+
+              </div>
+
+
+
+        </section>
+
+        <section id="whatwedone">
+          <div class="projects-title">
+            <h1>O QUE FIZEMOS</h1>
+            <h3>PROJETOS</h3>
+          </div>
+
+          <div class="project-info">
+            <p>Fundada em 2014, com o objetivo de promover a consciencialização sobre a
+              temática do daltonismo e difundir, com foco no ensino, a utilização do código ColorADD como
+              uma boa prática inclusiva, a ColorADD Social tem desde então abraçado diferentes projetos,
+              em diferentes regiões. Tanto em Portugal como noutras partes do mundo (Moçambique e
+              Índia), contamos sempre com o apoio de entidades de diferentes áreas que, cada uma à sua
+              maneira, contribuíram para o crescimento e notoriedade deste projeto.
+              Desde 2017 a ColorADD.Social, no âmbito de candidaturas à Portugal Inovação Social, realizou
+              o Programa nas Escolas com enfoque nas escolas da região Norte e Alentejo.</p>
+          </div>
+
+          <div class="project_vid">
+            <video autoplay controls muted>
+              <source src="img/intro.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="project-info">
+            <p>O rastreio do daltonismo na faixa etária correspondente aos 8 – 10 anos (crianças
+              dos 3.o e 4o anos do 1.o CEB) é fundamental para detetar precocemente possíveis casos de
+              daltonismo. Havendo esse diagnóstico preliminar, a escola e os encarregados de educação
+              serão informados por via de um relatório, para que deste modo as crianças possam ter o
+              devido acompanhamento. Pretende-se assim que estes casos sejam encaminhados para
+              consultas da especialidade para exames complementares de diagnóstico.
+              Através de parcerias com grupos óticos e óticas locais nos municípios onde realizamos o
+              Programa, conseguimos desde 2014 reunir dados concretos sobre a incidência de daltonismo
+              em Portugal no que a esta faixa etária respeita.</p>
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+        <div class="footer_sponsors">
+          <img src="img/logosrodape.png" alt="sponsors">
+        </div>
+    
+        <div class="footer_info">
+    
+          <div class="footer_about">
+            <h1>Sobre</h1>
+            <p>Código</p>
+            <p>Projetos</p>
+            <p>ColorADD</p>
+          </div>
+          <div class="footer_office">
+            <h1>Encontra-nos</h1>
+            <p>Rua de Miguel Bombarda,</p>
+            <p>nº124 Sala 2A</p>
+            <p>4050-377 Porto, Portugal</p>
+          </div>
+          <div class="footer_contact">
+            <h1>Contacto</h1>
+            <p>+351 917 526 446</p>
+            <p>+351 229 372 053</p>
+            <p>coloradd.social@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer_sep"> </div>
+      
+        <div class="footer_social">
+          <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
+          <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
+          <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
+          <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+        </div>
+      
+      </footer>
+
+      <script src="https://unpkg.com/flooper"></script>
+      <script src="js/flooper.js"></script>
+</body>
+</html>

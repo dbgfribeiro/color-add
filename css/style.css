@@ -1,0 +1,399 @@
+nav a {
+  color: #666363;
+}
+/*-----------------------HOME------------------------*/
+#home {
+  height: 680px;
+}
+
+#home .home_title {
+  position: absolute;
+  margin-left: 5%;
+  top:18%;
+}
+
+.home_title h1 {
+  font-weight: bold;
+  font-size: 8em;
+  line-height: 130px;
+  color: #1f1f1f;
+}
+
+.cases {
+  cursor: pointer;
+  position: absolute;
+  top: 18%;
+  right: 2%;
+}
+
+.cases ul {
+  list-style: none;
+  text-align: right;
+}
+
+.cases a {
+  font-size: 20px;
+  border-bottom: 1px solid #FFCF26;
+  color: #666666;
+  font-weight: 500;
+}
+
+.cases a:hover {
+  color: #666363;
+}
+
+@media screen and (max-width: 980px) {
+  #home .home_title {
+    bottom: 15%;
+  }
+  .home_title h3 {
+    font-size: 4em;
+  }
+  #reveal{
+    display: none;
+  }
+  .cases a {
+    display: none;
+  }
+
+  #home {
+    background-image: url(../img/normal.png);
+    background-position: right;
+    background-size: cover;
+    cursor: normal;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #home{
+    height: 600px;
+  }
+  .home_title h3 {
+    font-size: 2em;
+  }
+}
+
+/*-----------------------INTRO------------------------*/
+#intro {
+  height: auto;
+  padding: 3% 0 4% 0;
+}
+
+#intro .intro_container {
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+}
+
+#intro .intro_vid {
+  padding-left: 2%;
+}
+
+#intro .intro_text {
+  width: 50%;
+  padding: 0 5%;
+}
+
+.intro_text h1 {
+  position: absolute;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: rgba(0, 0, 0, 0.06);
+}
+
+.intro_text h3::after {
+  display: block;
+  content: '';
+  width: 20%;
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+}
+
+.intro_text h3 {
+  margin-top: 30px;
+  font-size: 28px;
+}
+
+.intro_text p {
+  margin-top: 5%;
+  font-weight: lighter;
+  color: #666363;
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 530px) {
+}
+
+/*-----------------------ABOUT------------------------*/
+#about{
+  background-color: #F9F9F9;
+}
+.about-info {
+  padding: 4% 8%;
+  color: #666363;
+}
+.about-info a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #FFCF26;
+}
+.about-info a:hover{
+  opacity: 0.75;
+}
+
+/*-----------------------NEWS------------------------*/
+
+.news-container{
+  display: flex;
+  justify-content: center;
+  margin: 6% 4%;
+}
+.articles{
+  display: flex;
+  width: 50%;
+}
+.top .article{
+  width: 50%;
+  position: relative;
+}
+.bottom .article{
+  width: 50%;
+  position: relative;
+}
+.article{
+  background: #FFFFFF;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 16px;
+  padding: 1%;
+  margin: 1%;
+  min-height: 105%;
+}
+.article img{
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+}
+.article h3{
+  margin: 1.5% 0 0 1%;
+}
+.article p{
+  margin: 1.5% 0 0 1%;
+  color: #666363;
+  font-size: 14px;
+}
+.top .article a{
+  position: absolute;
+  bottom: 10px;
+  left: 0; 
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFCF26;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.bottom .article a{
+  position: absolute;
+  left: 0; 
+  right: 0;
+  bottom: 10px;
+  margin: 0 auto;
+  text-align: center;
+  color: #FFCF26;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.article a:hover{
+  opacity: 0.8;
+}
+@media screen and (max-width: 980px) {
+  .news-container{
+    display: block;
+  }
+  .articles{
+    display: flex;
+    width: 100%;
+  }
+}
+/*-----------------------COLORBLINDNESS------------------------*/
+#colorbindness{
+
+}
+.cb-container{
+  display: flex;
+}
+.cb-info{
+  padding: 8% 8% 12% 8%;
+  width: 65%;
+}
+.cb-info .cb-title{
+  position: absolute;
+}
+.cb-info .cb-title h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.cb-info .cb-title h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
+.cb-info .cb-title h3::after {
+  display: block;
+  content: '';
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+  width: 50%;
+}
+.cb-info p{
+  color: #666363;
+  margin-top: 20%;
+}
+.cb-info a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #FFCF26;
+}
+.cb-info a:hover{
+  opacity: 0.75;
+}
+
+.cb_vid{
+  position: absolute;
+  z-index: -1;
+  right: 8%;
+  margin-top: 7%;
+}
+
+.cb-numbers{
+  z-index: 1;
+  background-color:#F9F9F9;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 4% 8%;
+}
+.cb-numbers .cb-number{
+  width: 100%;
+  margin: 0 4%;
+}
+.cb-numbers .cb-number h2{
+  font-weight: 800;
+  color: #FFCF26;
+  font-size: 3em;
+}
+.cb-numbers .cb-number p{
+  color: #666363;
+}
+
+
+/*-----------------------CODE------------------------*/
+#code{
+}
+
+.code-container{
+  padding: 4% 8%;
+}
+
+.code-container .code-title{
+  position: absolute;
+}
+.code-container .code-title h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.code-container .code-title h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
+.code-container .code-title h3::after {
+  display: block;
+  content: '';
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+  width: 50%;
+}
+
+.code-container .code-icons{
+  margin-top: 4%;
+  display: flex; 
+  justify-content: center;;
+}
+.code-container .code-icons img{
+  width: 90%;
+  margin: 0 2%;
+}
+.code-container p{
+  color: #666363;
+}
+.code-container a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #FFCF26;
+}
+
+
+/*-----------------------SCHOOLS------------------------*/
+.schools-container{
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 4% 8%;
+}
+.schools-container img{
+  width: 50%;
+  height: 50%;
+}
+
+.schools-info{
+  padding-left: 5%;
+}
+.schools-info .schools-title h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  color: rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+.schools-info .schools-title h3 {
+  position: absolute;
+  margin-top: -35px;
+  font-size: 28px;
+}
+.schools-info .schools-title h3::after {
+  display: block;
+  content: '';
+  height: 4px;
+  background: #FFCF26;
+  margin-top: 4px;
+  width: 50%;
+}
+.schools-info p{
+  margin-top: 5%;
+  color: #666363;
+}
+.schools-info a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #FFCF26;
+}

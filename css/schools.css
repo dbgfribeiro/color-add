@@ -1,0 +1,136 @@
+nav a {
+    color: #666363;
+  }
+  
+
+#whatwedone{
+    height: 600px;
+}
+
+/*----------------------SCHOOLS------------------------*/
+.schools-title{
+    padding: 8% 0 0 8%;
+  }
+.schools-title h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    color: rgba(0, 0, 0, 0.06);
+    position: relative;
+  }
+  .schools-title h3 {
+    position: absolute;
+    margin-top: -35px;
+    font-size: 28px;
+  }
+  .schools-title h3::after {
+    display: block;
+    content: '';
+    height: 4px;
+    background: #FFCF26;
+    margin-top: 4px;
+    width: 50%;
+  }
+  #schools p{
+      color: #666363;
+}
+.schools-desc{
+    padding: 4% 8%;
+}
+
+.scroll_h {
+  overflow: auto;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.c-my-flooper {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-item-start {
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.js-flooper2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.school-project{
+  background: #FFFFFF;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 16px;
+  padding: 15px;
+  margin: 20px 10px;
+  width: 400px;
+  height: 90%;
+}
+.school-project h2{
+  font-size: 1em;
+}
+.school-project img{
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+}
+.school-project p{
+  padding: 0;
+  font-size: 14px;
+}
+
+
+
+/*----------------------PROJECTS------------------------*/
+#whatwedone{
+    height: fit-content;
+}
+.projects-title{
+    padding: 8% 0 0 8%;
+  }
+  .projects-title h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    color: rgba(0, 0, 0, 0.06);
+    position: relative;
+  }
+  .projects-title h3 {
+    position: absolute;
+    margin-top: -35px;
+    font-size: 28px;
+  }
+  .projects-title h3::after {
+    display: block;
+    content: '';
+    height: 4px;
+    background: #FFCF26;
+    margin-top: 4px;
+    width: 50%;
+  }
+
+  .project-info{
+    padding: 4% 8%;
+    color: #666363;
+  }
+
+.project_vid {
+    padding: 2%;
+    width: 84%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+}
+.project_vid video{
+    width: 100%;
+}
