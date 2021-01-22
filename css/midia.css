@@ -7,19 +7,21 @@ nav a {
   padding-bottom: 2%;
 }
 .midia-title {
-  padding: 8% 6% 0 6%;
+  padding: 12% 6% 0 6%;
+  text-align: right;
 }
 .midia-title h1 {
   font-weight: 600;
   font-size: 50px;
-  line-height: 68px;
+  line-height: 44px;
   color: rgba(0, 0, 0, 0.06);
   position: relative;
 }
 .midia-title h3 {
   position: absolute;
-  margin-top: -35px;
+  margin-top: -24px;
   font-size: 28px;
+  right: 6%;
 }
 .midia-title h3::after {
   display: block;
@@ -28,6 +30,7 @@ nav a {
   background: #FFCF26;
   margin-top: 4px;
   width: 50%;
+  float: right;
 }
 
 .header_img {
@@ -64,17 +67,20 @@ nav a {
     font-size: 32px;
     margin-top: -15px;
   }
-
   .midia_title h3 {
     font-size: 20px;
   }
   .midia_title h3::after {
     margin-top: -25px;
   }
+  .header_img img{
+    margin-top: 6%;
+  }
   .header_text {
-    margin: 2% 30% 0 0;
+    margin: 6% auto;
     color: #000;
     position: relative;
+    width: 100%;
   }
   .header_text h2{
     font-size: 1.2em;
@@ -83,12 +89,21 @@ nav a {
     margin-top: 2%;
     font-size: 0.8em;
   }
-
+}
+@media screen and (max-width: 560px) {
+  .midia_title{
+    transform: scale(0.8 , 0.8);
+    transform-origin: left;
+    width: 120%;
+  }
 }
 
 
 /*-----------------------NEWS------------------------*/
-
+#news{
+  background: #ff0743;
+  padding: 2% 0 4% 0;
+}
 .news-container{
   display: flex;
   justify-content: center;
@@ -166,20 +181,25 @@ nav a {
 
 
 /*--------------RECORDS--------------*/
+#records{
+  background: #009ef9;
+  padding-bottom: 8%;
+}
 .records-title {
-  padding: 8% 6% 0 6%;
+  padding: 6% 6% 0 6%;
 }
 .records-title  h1 {
   font-weight: 600;
   font-size: 50px;
   line-height: 68px;
-  color: rgba(0, 0, 0, 0.06);
+  color: rgba(0, 0, 0, 0.1);
   position: relative;
 }
 .records-title  h3 {
   position: absolute;
   margin-top: -35px;
   font-size: 28px;
+  color: #fff;
 }
 .records-title  h3::after {
   display: block;
@@ -190,7 +210,114 @@ nav a {
   width: 50%;
 }
 
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+    max-height: 500px;
+    transition: max-height 0.5s ease-in;
+}
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
 
+.accordion {
+  width: 100%;
+  padding: 0 6%;
+  margin-top: 6%;
+}
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-title h1 {
+  color: #fff;
+  font-size: 24px;
+  width: 100%;
+  position: relative;
+}
+.accordion .accordion-item {
+  padding: 20px 20px 20px 0;
+  width: 100%;
+  text-align: left;
+  transition: 0.4s;
+  border-bottom: 3px solid #fff;
+}
+.accordion-item{
+  position: relative;
+}
+.accordion-item #open{
+  text-decoration: none;
+  color: #FFCF26;
+  font-size: 2em;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  visibility: visible;
+}
+.accordion-item #open:after{
+  position: absolute;
+  right: 2%;
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  visibility: hidden;
+  content: "-";
+}
+.accordion-item:hover.accordion-item #open{
+  visibility: hidden;
+}
+.accordion-item:hover.accordion-item #open:after{
+  visibility: visible;
+}
+
+.accordion-item-content p{
+  margin: 2% 2% 0 0;
+  color: #fff;
+}
+@media screen and (max-width: 980px) {
+  .accordion{
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  #records{
+    padding: 6% 0 12% 0;
+  }
+  .records-title{
+    transform: scale(0.8 , 0.8);
+    transform-origin: left;
+    width: 120%;
+  }
+  .accordion{
+    margin-top: 6%;
+  }
+  .records-title h1{
+    line-height: 50px;
+  }
+  .records-title h3{
+    margin-top: -25px;
+  }
+  .accordion-title h1 {
+    font-size: 18px;
+  }
+  .accordion-item-content p{
+    font-size: 14px;
+  }
+  .accordion-item #open{
+    font-size: 1.5em;
+  }
+}
+
+/*
 .accordion:hover .accordion-item:hover .accordion-item-content,
 .accordion .accordion-item--default .accordion-item-content {
   max-height: 600px;
@@ -198,11 +325,8 @@ nav a {
 
 .accordion-item-content,
 .accordion:hover .accordion-item-content {
-	/* Initially we don't want any height, and we want the contents to be hidden */
 	max-height: 0;
 	overflow: hidden;
-
-	/* Set our transitions up. */
 	-webkit-transition: max-height 0.8s;
 	-moz-transition: max-height 0.8s;
 	transition: max-height 0.8s;
@@ -330,3 +454,4 @@ nav a {
     margin-left: 66%;
   }
 }
+*/

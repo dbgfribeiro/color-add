@@ -5,17 +5,30 @@ nav a {
 /*-----------------------INTRO------------------------*/
 #intro {
   height: auto;
-  padding: 3% 0 4% 0;
+  padding: 3% 0 6% 0;
 }
 
 #intro .intro_container {
   display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
   margin-top: 10%;
   justify-content: center;
 }
 
 #intro .intro_vid {
-  padding-left: 2%;
+  margin: 0 0 0 2%;
+  padding: 0;
+  width: 40%;
+  height: fit-content;
+}
+#intro .intro_vid video{
+  border: 4px solid #FFCF26;
 }
 
 #intro .intro_text {
@@ -50,6 +63,39 @@ nav a {
   font-weight: lighter;
   color: #666363;
 }
+@media screen and (max-width: 980px) {
+  #intro .intro_container{
+    display: block;
+  }
+  #intro .intro_text {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+  }
+  .intro_text h1 {
+    margin-top: -4%;
+  }
+  #intro .intro_vid {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .intro-title{
+    transform: scale(0.8 , 0.8);
+    transform-origin: left;
+    width: 120%;
+  }
+}
+
+
+/*----------------------ABOUT------------------------*/
+#about{
+  background-color: #ff7e00;
+  padding: 4% 0 6% 0;
+}
 .about-title {
   padding-bottom: 4%;
 }
@@ -57,19 +103,20 @@ nav a {
   font-weight: 600;
   font-size: 50px;
   line-height: 68px;
-  color: rgba(0, 0, 0, 0.06);
+  color: #fba653;
   position: relative;
 }
 .about-title h3 {
   position: absolute;
   margin-top: -35px;
   font-size: 28px;
+  color: #fff;
 }
 .about-title h3::after {
   display: block;
   content: '';
   height: 4px;
-  background: #FFCF26;
+  background: #802278;
   margin-top: 4px;
   width: 50%;
 }
@@ -88,37 +135,36 @@ nav a {
 
 .accordion {
   width: 100%;
-  padding: 8% 8% 4% 8%;
+  padding: 0 8%;
 }
 .accordion-title {
   display: flex;
   justify-content: space-between;
 }
 .accordion-title h1 {
-  color: #000000;
-  font-weight: lighter;
+  color: #fff;
   font-size: 24px;
   width: 100%;
   position: relative;
 }
 .accordion .accordion-item {
-  background-color: #ffffff;
+  background-color: #ff7e00;
   padding: 20px 20px 20px 0;
   width: 100%;
   text-align: left;
   transition: 0.4s;
-  border-bottom: 4px solid #DADADA;
+  border-bottom: 3px solid #fff;
 }
 .accordion-item{
   position: relative;
 }
 .accordion-item #open{
   text-decoration: none;
-  color: #FBE204;
+  color: #802278;
   font-size: 2em;
   font-weight: 600;
   position: absolute;
-  right: 2%;
+  right: 0;
   margin: 0;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -144,24 +190,55 @@ nav a {
 
 .accordion-item-content p{
   margin: 2% 2% 0 0;
-  color: #666363;
+  color: #fff;
+}
+@media screen and (max-width: 980px) {
+  .accordion{
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  #about{
+    padding: 6% 0 12% 0;
+  }
+  .about-title{
+    transform: scale(0.8 , 0.8);
+    transform-origin: left;
+    width: 120%;
+  }
+  .accordion-title h1 {
+    font-size: 18px;
+  }
+  .accordion-item-content p{
+    font-size: 14px;
+  }
+  .accordion-item #open{
+    font-size: 1.5em;
+  }
 }
 
 /*----------------------TEAM------------------------*/
+#team{
+  background-color: #2d9dcd;
+  padding: 4% 0;
+}
 .team-title {
-  margin: 8% 0 4% 8%;
+  margin:0 8% 2% 8%;
 }
 .team-title  h1 {
   font-weight: 600;
   font-size: 50px;
   line-height: 68px;
-  color: rgba(0, 0, 0, 0.06);
+  color: #5cacd1;
   position: relative;
 }
 .team-title  h3 {
   position: absolute;
   margin-top: -35px;
   font-size: 28px;
+  color: #fff;
 }
 .team-title  h3::after {
   display: block;
@@ -175,13 +252,56 @@ nav a {
   width:83%;
   margin: 0 auto;
 }
-  .team-info p{
-  color: #666363;
+.team-info p{
+    color: #fff;
 }
-.team-info p:last-child {
-  margin-top: 2%;
+.team-info p:first-child{
+  margin-top: 4% ;
 }
 
+.team-members{
+  display: grid;
+  grid-template-columns: repeat(6 , 1fr);
+  text-align: center;
+  margin-left: -2%;
+  padding: 4% 0;
+}
+.team-members h4{
+  color: #fff;
+}
+.member{
+  margin: 8% 0;
+}
+.member-pic{
+  height: 150px;
+  width: 150px;
+  background-color: #bbb;
+  border: 4px solid #fff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 980px) {
+  .team-members{
+    grid-template-columns: repeat(3 , 1fr);
+  }
+}
+@media screen and (max-width: 560px) {
+  #team{
+    padding: 6% 0;
+  }
+  .team-title{
+    transform: scale(0.8 , 0.8);
+    transform-origin: left;
+  }
+  .team-members{
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  .member{
+    margin: 4% 0;
+  }
+}
 
 /*----------------------PARTNERS------------------------*/
 .partners-title {
@@ -261,67 +381,114 @@ nav a {
   display: block;
 }
 
-
-/*--------------SLIDER-LOGOS--------------*/
-.slider-logos{
-  margin-top: 6%;
-  width: 100vw;
-  height: 300px;
-  border-top: 2px solid #DADADA;
-  border-bottom: 2px solid #DADADA;
+@media screen and (max-width: 980px) {
+  .all-partners{
+    display: block;
+    padding: 6% 0;
+    margin: 0;
+  }
+  .partners-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  #partners{
+    padding: 6% 0;
+  }
+  .partners-title{
+    transform: scale(0.8 , 0.8);
+    transform-origin: left;
+  }
 }
 
 
 
 /*--------------AWARDS--------------*/
+#awards{
+  background: #0201ff;
+  padding: 6% 0 8% 0;
+}
 .awards-title {
-  margin: 8% 0 0 8%;
+  margin-left: 8%;
 }
 .awards-title h1 {
   font-weight: 600;
   font-size: 50px;
   line-height: 68px;
-  color: rgba(0, 0, 0, 0.06);
+  color: #0301c7;
   position: relative;
 }
 .awards-title h3 {
   position: absolute;
   margin-top: -35px;
   font-size: 28px;
+  color: #fff;
 }
 .awards-title h3::after {
   display: block;
   content: '';
   height: 4px;
-  background: #FFCF26;
+  background: #fdfe00;
   margin-top: 4px;
   width: 50%;
 }
 .awards-container{
-  justify-content: center;
-  margin: 8% 0;
+  margin-top: 4%;
+  padding: 0 3.8%;
   display: flex;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
 }
 .award{
-  width: 20%;
-  margin: 0 6%;
+  /*margin: 0 6%;*/
+  display: flex;
+  margin: 0 4%;
+  width: 40%;
+  height: fit-content;
+}
+.award-img{
+  background: #fdfe00;
+  width: 100%;
+  height: 200px;
+}
+.award-info{
+  margin-left: 4%;
 }
 .award h2{
   font-weight: 800;
+  color: #fff;
 }
 .award p{
-  color: #666363;
+  color: #fff;
 }
 .award a{
   text-decoration: none;
-  color: #FFCF26;
+  color: #fdfe00;
 }
 .award a:hover{
   opacity: 0.7;
+}
+@media screen and (max-width: 980px) {
+  .awards-container{
+    display: block;
+    padding: 0;
+    width: 90%;
+    margin: 6% auto 0 auto;
+  }
+  .award{
+    width: 100%;
+    margin: 6% 0 0 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 560px) {
+  #awards{
+    padding: 6% 0;
+  }
+  .awards-title{
+    transform: scale(0.8 , 0.8);
+    transform-origin: left;
+  }
+  .awards-title h1 {
+    font-size: 32px;
+  }
 }
