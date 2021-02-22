@@ -116,6 +116,32 @@ nav a {
   border: 6px solid #fff;
 }
 
+/*-----------SLICK-------------*/
+.glider-dot{
+  background: rgba(0, 0, 0, 0.15);
+}
+.glider-dot.active{
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.for_slick_slider{
+  display: flex;
+  width: 38%;
+  margin: 0 8% 0 2%;
+}
+.for_slick_slider .items{
+  position: relative;
+}
+.for_slick_slider .items img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border: 6px solid #fff;
+}
+.slick-slide {
+  outline: none
+}
+
 @media screen and (max-width: 980px) {
   .school-project{
     padding: 6% 0;
